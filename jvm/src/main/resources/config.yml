@@ -1,0 +1,4 @@
+db:
+  url: jdbc:postgresql://localhost:5432/rabbit_packetstorm?user=user&password=password
+zookeeper:
+  hosts: localhost:2183

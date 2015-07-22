@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.clojure:tools.logging:0.2.3">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.clojure/tools.logging/0.2.3/20096ee8dbc67fccf39ca5e997c3a2647f20176f/tools.logging-0.2.3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.clojure/tools.logging/0.2.3/5f8fa964d1b2862846e9ece4613d25b796520434/tools.logging-0.2.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

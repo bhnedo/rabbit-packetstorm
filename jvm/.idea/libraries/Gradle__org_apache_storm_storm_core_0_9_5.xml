@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.apache.storm:storm-core:0.9.5">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.storm/storm-core/0.9.5/d2bf27db853347dcf66990b4514db20a7897303e/storm-core-0.9.5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.storm/storm-core/0.9.5/b23d0c8c31cdd0682a4e1b68d1a82caeed25dd6c/storm-core-0.9.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
