@@ -1,0 +1,9 @@
+{
+    "db": {
+        "url": "postgres://postgres:password@localhost/rabbit_packetstorm"
+    },
+    "kafka": {
+        "zookeeper": "localhost:2183",
+        "topic": "packets"
+    }
+}

@@ -1,0 +1,148 @@
+<!doctype html>
+<html ng-app="MainApp">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>Rabbit Packetstorm</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300' rel='stylesheet' type='text/css'>
+
+      <!-- build:css styles/style.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="../bower_components/semantic/dist/semantic.css" />
+    <!-- endbower -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+
+    <base href="/" />
+
+
+  </head>
+  <body ng-controller="packetController">
+
+        <div class="ui stackable padded grid container">
+            <div class="three column row">
+                <div class="red column">
+                    <div class="ui statistic">
+                        <div class="total value">
+                           <i class="send icon"></i> {{all}}
+                        </div>
+                        <div class="label">
+                            TOTAL PACKETS
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="green column">
+                    <div class="ui statistic">
+                        <div class="value">
+                            <i class="world icon"></i> {{tcp}}
+                        </div>
+                        <div class="label">
+                            TCP PACKETS
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blue column">
+                    <div class="ui statistic">
+                        <div class="value">
+                            <i class="cube icon"></i> {{udp}}
+                        </div>
+                        <div class="label">
+                            UDP PACKETS
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="two column row">
+                <div class="purple column">
+                    <h4>TOP PACKETS BY IP ADDRESS</h4>
+
+
+                    <table class="ui very basic table">
+                        <thead>
+                        <tr>
+                            <th>IP ADDRESS</th>
+                            <th>COUNT</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr ng-repeat="ip in topIps">
+                            <td>{{ip.ip}}</td>
+                            <td>{{ip.ipCount}}</td>
+                        </tr>
+                    </table>
+
+
+
+                    </div>
+
+
+                <div class="purple column">
+                    <h4>TOP PACKETS BY PORT</h4>
+                    <table class="ui very basic table">
+                        <thead>
+                        <tr>
+                            <th>PORT</th>
+                            <th>COUNT</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr ng-repeat="port in topPorts">
+                            <td>{{port.port}}</td>
+                            <td>{{port.portCount}}</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+
+            <div class="one column row">
+                <div class="blue column">
+
+                    <h3 class="ui center aligned header">TOP PROTOCOLS</h3>
+
+                    <table class="ui very basic table">
+                        <thead>
+                        <tr>
+                            <th>PROTOCOL</th>
+                            <th>PACKETS</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr ng-repeat="proto in topProtos">
+                            <td>{{proto.proto}}</td>
+                            <td>{{proto.protoCount}}</td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+
+
+    <!-- build:js script.js -->
+    <!-- bower:js -->
+    <script src="../bower_components/angularjs/angular.js"></script>
+    <script src="../bower_components/angular-route/angular-route.js"></script>
+    <script src="../bower_components/semantic/dist/semantic.js"></script>
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+
+
+        <!-- endbower -->
+    <script src="scripts/route.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/packet.js"></script>
+    <script src="scripts/services/packet.js"></script>
+
+        <!-- endbuild -->
+  </body>
+</html>

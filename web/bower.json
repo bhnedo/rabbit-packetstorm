@@ -1,0 +1,9 @@
+{
+  "name": "web",
+  "private": true,
+  "dependencies": {
+    "angularjs": "~1.4.0",
+    "angular-route": "~1.4.0",
+    "semantic": "~1.12.3"
+  }
+}
