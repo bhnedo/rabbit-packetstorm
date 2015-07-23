@@ -5,7 +5,7 @@ A small experiment on aggregating raw network packet streams into ```Storm``` da
 ![](https://github.com/bhnedo/rabbit-packetstorm/blob/master/rabbit-packetstorm.png)
 
 ## Requirements
-* Single node or multi node Storm cluster. It is also possible to test the application in local cluster mode.
+* Single node or multi node Storm cluster. It is also possible to test the topology in local cluster mode
 * Zookeeper
 * Kafka
 * PostgreSQL
