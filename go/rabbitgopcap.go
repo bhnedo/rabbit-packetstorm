@@ -57,8 +57,8 @@ func decodePackets(iface string, producer sarama.AsyncProducer) {
 
 	// Try to open live packet capture
 	h, err := pcap.OpenLive(iface,
-							spanlen,
-							true, pcap.BlockForever)
+				spanlen,
+				true, pcap.BlockForever)
 	if err != nil {
 		log.Printf("Couldn't start live packet capture on %s interface", iface)
 	}
